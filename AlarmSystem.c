@@ -24,8 +24,13 @@ int main()
 	
 	for(;;) 
 	{ 
-		int x = digitalRead(2);				    		                if(x == 0)						       
-		{ 									        	ALARM_ARMING(); 							} 								        }
+		int x = digitalRead(2);
+		
+		if(x == 0)						       
+		{ 
+			ALARM_ARMING(); 
+		} 
+	}
 	return 0;
 }
 
